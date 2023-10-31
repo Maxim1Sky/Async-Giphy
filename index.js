@@ -6,6 +6,8 @@ const { myAPI } = require("./apiHere.js");
 
 //const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${myAPI}&q=pokemon&limit=25&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
 
+//Website for this: https://developers.giphy.com/explorer/
+//Codio lesson: https://codio.com/mtoma/5-1-workshop-asynchronous-javascript
 async function getImage(query) {
   const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${myAPI}&q=${query}&limit=25&offset=0&rating=g&lang=en&bundle=messaging_non_clips`;
   const response = await fetch(endpoint);
