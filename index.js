@@ -1,4 +1,4 @@
-//require("dotenv").config();
+require("dotenv").config();
 
 //import { myAPI } from "./apiHere.js";
 
@@ -9,7 +9,8 @@ const endpoint = `https://api.giphy.com/v1/gifs/search?api_key=${myAPI}&q=pokemo
 async function getGit() {
   return;
 }
-console.log(myAPI);
-console.log(endpoint);
+
 // Print out value of API key stored in .env file
+// It works but you just need 'npm install dotenv'
 console.log(process.env.API_KEY);
+console.log(myAPI);
